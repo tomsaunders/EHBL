@@ -1,0 +1,22 @@
+﻿<Window x:Class="EHBL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EHBL"
+        mc:Ignorable="d"
+        Title="EHBL v2" Height="350" Width="525" WindowStartupLocation="CenterScreen" Icon="images/stupidicon.png" Background="#FF000011" BorderThickness="0" Foreground="{x:Null}">
+    <Grid>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="517" Background="#F7000050" BorderThickness="2" BorderBrush="White">
+            <MenuItem Header="Games"         Height="40" Background="#00000000" Foreground="White" FontFamily="Trebuchet MS" FontSize="18" 
+                      Click="Games_Click"/>
+            <MenuItem Header="Options"      Height="40" Background="#00000000" Foreground="White" FontFamily="Trebuchet MS" FontSize="18" 
+                      Click="Options_Click"/>
+            <MenuItem Header="Help"         Height="40" Background="#00000000" Foreground="White" FontFamily="Trebuchet MS" FontSize="18"
+                      Click="Help_Click"/>
+        </Menu>
+        <Label x:Name="gamesLabel" Content="Games" HorizontalAlignment="Left" Foreground="White" Margin="80,77,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="optionsLabel" Content="Options" HorizontalAlignment="Left" Foreground="White" Margin="80,77,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="helpLabel" Content="Help" HorizontalAlignment="Left" Foreground="White" Margin="80,77,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
